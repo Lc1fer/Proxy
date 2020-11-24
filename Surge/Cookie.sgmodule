@@ -1,0 +1,30 @@
+#!name=Cookie
+#!desc=Get cookie
+#!system=ios
+
+[Script]
+# > Jingdong - api.m.jd.com, daojia.jd.com
+jd_cookie = type=http-request,pattern=https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
+
+jjdj_cookie = type=http-request,pattern=https:\/\/daojia\.jd\.com\/client\?_jdrandom=\d{13}&functionId=%2Fsignin,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/jddj.js
+
+# > IQIYI - ifac*.iqiyi.com
+iqiyi_cookie = type=http-request,pattern=^https?:\/\/iface(\d)?\.iqiyi\.com\/,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
+
+# > 52Pojie - www.52pojie.cn
+52pojie_cookie = type=http-request,pattern=https:\/\/www\.52pojie\.cn\/home\.php\?,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js
+
+# > RRTV - *.rr.tv
+rrtv_cookie = type=http-request,pattern=^https:\/\/api\.rr\.tv\/user\/profile,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/rrtv/rrtv.cookie.js
+
+# > Ctrip - m.ctrip.com
+ctrip_cookie = type=http-request,pattern=https:\/\/m\.ctrip\.com\/restapi\/soa2\/14946\/json\/userBaseInfo,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/ctrip_cookie.js
+
+# > DiDi - as.xiaojukeji.com
+didi_token = type=http-request,pattern=^https:\/\/as\.xiaojukeji\.com\/ep\/as\/toggles\?,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_new.js
+
+# > Xiaomi - account.huami.com
+xiaomi_token = type=http-response,pattern=^https:\/\/account\.huami\.com\/v2\/client\/login,requires-body=1,max-size=0, script-path=https://raw.githubusercontent.com/Luc1ferrr/Luc1fer/master/Script/Xiaomi-sports.js
+
+[MITM]
+hostname = %APPEND% api.m.jd.com, daojia.jd.com, ifac*.iqiyi.com, www.52pojie.cn, *.rr.tv, m.ctrip.com, as.xiaojukeji.com, account.huami.com

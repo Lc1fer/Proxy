@@ -1,0 +1,15 @@
+#!name=RRTV
+#!desc=Removes ads
+#!system=ios
+
+[Rule]
+AND,((USER-AGENT,PUClient*), (NOT,((DOMAIN-SUFFIX,rr.tv)))),REJECT
+URL-REGEX,^https?:\/\/api\.rr\.tv\/(?:ad\/getAll$|storage/business/rootName/app/homePage),REJECT
+
+[Script]
+rrsp_video = type=http-response,pattern=^https?:\/\/api\.rr\.tv\/watch\/v\d\/get_movie_info,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Choler/Surge/master/Script/rrsp.js
+
+rrsp_banner = type=http-response,pattern=^https?:\/\/api\.rr\.tv\/v\dplus\/index\/channel$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Choler/Surge/master/Script/rrsp.js
+
+[MITM]
+hostname = %APPEND% api.rr.tv

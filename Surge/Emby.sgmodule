@@ -1,0 +1,13 @@
+#!name=Emby
+#!desc=Remove Emby's restrictions
+#!system=ios
+
+[Script]
+emby-adr-vD.js = type=http-response,pattern=^https://mb3admin.com/admin/service/registration/validateDevice,requires-body=1,max-size=0,script-path=https://subweb.oss-cn-hongkong.aliyuncs.com/Script/emby-adr-vD.js
+
+emby-adr-v.js = type=http-response,pattern=^https://mb3admin.com/admin/service/registration/validate,requires-body=1,max-size=0,script-path=https://subweb.oss-cn-hongkong.aliyuncs.com/Script/emby-adr-v.js
+
+emby-adr-gS.js = type=http-response,pattern=^https://mb3admin.com/admin/service/registration/getStatus,requires-body=1,max-size=0,script-path=https://subweb.oss-cn-hongkong.aliyuncs.com/Script/emby-adr-gS.js
+
+[MITM]
+hostname = %APPEND% mb3admin.com
