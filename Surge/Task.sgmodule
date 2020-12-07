@@ -21,6 +21,8 @@ ctrip_task = type=cron,cronexp="10 0 * * *",wake-system=1,timeout=60,script-path
 
 didi_task = type=cron,cronexp="0 1,20 * * *",wake-system=1,timeout=180,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_new.js
 
+jd_split_task = type=cron,cronexp="10 0 * * *",wake-system=1,timeout=60,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_split.js
+
 jd_ms_redrain_task = type=cron,cronexp="10 7 * * *",wake-system=1,timeout=60,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_ms_redrain.js
 
 xiaomi_task = type=cron,cronexp="25 15 * * *",wake-system=1,timeout=60,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/backUp/xmSports.js
