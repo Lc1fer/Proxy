@@ -19,15 +19,17 @@ rrtv_task = type=cron,cronexp="9 0 * * *",wake-system=1,timeout=60,script-path=h
 
 ctrip_task = type=cron,cronexp="10 0 * * *",wake-system=1,timeout=60,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/ctrip.js
 
-jd_split_task = type=cron,cronexp="11 0 * * *",wake-system=1,timeout=60,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_split.js
+jd_split_task = type=cron,cronexp="11 0 * * *",wake-system=1,timeout=180,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_split.js
 
 jd_ms_redrain_task = type=cron,cronexp="12 0 * * *",wake-system=1,timeout=60,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_ms_redrain.js
 
 jd_car_task = type=cron,cronexp="13 0 * * *",wake-system=1,timeout=60,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_car.js
 
-jd_health_task = type=cron,cronexp="14 0 * * *",wake-system=1,timeout=60,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_health.js
+jd_health_task = type=cron,cronexp="14 0 * * *",wake-system=1,timeout=180,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_health.js
 
 jd_kd_task = type=cron,cronexp="15 0 * * *",wake-system=1,timeout=60,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_kd.js
+
+jd_live_redrain_task = type=cron,cronexp="0 0,9,11,13,15,17,19,20,21,23 * * *",wake-system=1,timeout=60,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_live_redrain.js
 
 didi_task = type=cron,cronexp="0 1,20 * * *",wake-system=1,timeout=180,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_new.js
 
