@@ -21,6 +21,10 @@ ctrip_task = type=cron,cronexp="10 0 * * *",wake-system=1,timeout=60,script-path
 
 jd_car_task = type=cron,cronexp="13 0 * * *",wake-system=1,timeout=60,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_car.js
 
+jd_nian_task= type=cron,cronexp="0 0,1,2 * * *",wake-system=1,timeout=22200,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nian.js
+
+jd_nianCollect_task = type=cron,cronexp="20 * * * *",wake-system=1,timeout=200,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nianCollect.js
+
 jd_kd_task = type=cron,cronexp="15 0 * * *",wake-system=1,timeout=60,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_kd.js
 
 didi_task = type=cron,cronexp="0 1,20 * * *",wake-system=1,timeout=180,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_new.js
