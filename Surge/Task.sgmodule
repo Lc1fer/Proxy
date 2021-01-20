@@ -17,15 +17,15 @@ jd_cash = type=cron,cronexp="9 0 * * *",wake-system=1,timeout=300,script-path=ht
 
 jd_bean_home = type=cron,cronexp="10 7 * * *",wake-system=1,timeout=300,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_bean_home.js
 
+jd_lotteryMachine = type=cron,cronexp=11 1 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_lotteryMachine.js
+
+jd_live = type=cron,cronexp="10-20/5 12 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_live.js
+
 jd_nian= type=cron,cronexp="1 0,1,2 * * *",wake-system=1,timeout=22200,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nian.js
 
 jd_live_redrain = type=cron,cronexp="30,31 20-23/1 19 1 *",wake-system=1,timeout=200,script-path=https://raw.githubusercontent.com/shylocks/Loon/main/jd_live_redrain.js
 
 jd_nianCollect = type=cron,cronexp="20 * * * *",wake-system=1,timeout=300,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nianCollect.js
-
-jd_bookshop = type=cron,cronexp="1 8,12,18 * * *",wake-system=1,timeout=300,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_bookshop.js
-
-jd_fruit = type=cron,cronexp="5 6-18/6 * * *",wake-system=1,timeout=300,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_fruit.js
 
 jd_plantBean = type=cron,cronexp="1 7-21/2 * * *",wake-system=1,timeout=300,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_plantBean.js
 
