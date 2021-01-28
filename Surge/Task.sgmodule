@@ -3,33 +3,31 @@
 #!system=ios
 
 [Script]
-jd_car_exchange = type=cron,cronexp="1 0 * * *",wake-system=1,timeout=2000,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_car_exchange.js
+jd_car_exchange = type=cron,cronexp="1 0 * * *",wake-system=1,timeout=2000,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_car_exchange.js
 
 jd = type=cron,cronexp="5 0 * * *",wake-system=1,timeout=300,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
 
-jd_car = type=cron,cronexp="6 0 * * *",wake-system=1,timeout=300,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_car.js
+jd_car = type=cron,cronexp="6 0 * * *",wake-system=1,timeout=300,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_car.js
 
-jd_kd = type=cron,cronexp="7 0 * * *",wake-system=1,timeout=300,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_kd.js
+jd_kd = type=cron,cronexp="7 0 * * *",wake-system=1,timeout=300,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_kd.js
 
-jd_club_lottery = type=cron,cronexp="8 0 * * *",wake-system=1,timeout=300,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_club_lottery.js
+jd_club_lottery = type=cron,cronexp="8 0 * * *",wake-system=1,timeout=300,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_club_lottery.js
 
-jd_cash = type=cron,cronexp="9 0 * * *",wake-system=1,timeout=300,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_cash.js
+jd_cash = type=cron,cronexp="9 0 * * *",wake-system=1,timeout=300,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_cash.js
 
-jd_bean_home = type=cron,cronexp="10 7 * * *",wake-system=1,timeout=300,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_bean_home.js
+jd_bean_home = type=cron,cronexp="10 7 * * *",wake-system=1,timeout=300,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_bean_home.js
 
 jd_lotteryMachine = type=cron,cronexp=11 1 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_lotteryMachine.js
 
-jd_live = type=cron,cronexp="10-20/5 12 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_live.js
+jd_live = type=cron,cronexp="10-20/5 12 * * *",wake-system=1,timeout=20,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_live.js
 
-jd_nian= type=cron,cronexp="1 0,1,2 * * *",wake-system=1,timeout=22200,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nian.js
+jd_nian= type=cron,cronexp="1 0,1,2 * * *",wake-system=1,timeout=22200,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_nian.js
 
-#jd_live_redrain = type=cron,cronexp="30,31 20-23/1 * * *",wake-system=1,timeout=200,script-path=https://raw.githubusercontent.com/shylocks/Loon/main/jd_live_redrain.js
+jd_nianCollect = type=cron,cronexp="20 * * * *",wake-system=1,timeout=300,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_nianCollect.js
 
-jd_nianCollect = type=cron,cronexp="20 * * * *",wake-system=1,timeout=300,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nianCollect.js
+jd_plantBean = type=cron,cronexp="1 7-21/2 * * *",wake-system=1,timeout=300,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_plantBean.js
 
-jd_plantBean = type=cron,cronexp="1 7-21/2 * * *",wake-system=1,timeout=300,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_plantBean.js
-
-jd_get_share_code = type=cron,cronexp="20 13 * * 6",wake-system=1,timeout=300,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_get_share_code.js
+jd_get_share_code = type=cron,cronexp="20 13 * * 6",wake-system=1,timeout=300,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_get_share_code.js
 
 jddj = type=cron,cronexp="10 0 * * *",wake-system=1,timeout=300,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/jddj.js
 
@@ -43,7 +41,7 @@ ctrip = type=cron,cronexp="14 0 * * *",wake-system=1,timeout=300,script-path=htt
 
 didi = type=cron,cronexp="0 1,20 * * *",wake-system=1,timeout=300,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_new.js
 
-xiaomi = type=cron,cronexp="25 15 * * *",wake-system=1,timeout=300,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/backUp/xmSports.js
+xiaomi = type=cron,cronexp="25 15 * * *",wake-system=1,timeout=300,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/backUp/xmSports.js
 
 # box.switcher = type=cron,cronexp="10 0 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/box/switcher/box.switcher.js
 
