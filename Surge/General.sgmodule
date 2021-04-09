@@ -2,9 +2,6 @@
 #!desc=URL optimization and removes ads
 #!system=ios
 
-[General]
-force-http-engine-hosts = %APPEND% *.ott.cibntv.net, 123.59.31.1, 119.18.193.135, 122.14.246.33, 175.102.178.52
-
 [Rule]
 # > Jingdong
 URL-REGEX,^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start,REJECT-TINYGIF
@@ -23,9 +20,6 @@ URL-REGEX,^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start,REJECT-TI
 ^(http|https):\/\/you\.163\.com\/ https://you.163.com/ 302
 ^(http|https):\/\/(www.)?suning\.com\/ https://suning.com/ 302
 ^(http|https):\/\/(www.)?yhd\.com\/ https://yhd.com/ 302
-
-# Weibo Short URL
-^http:\/\/t\.cn https://sinaurl.cn 302
 
 # Redirect False to True
 # > IGN China to IGN Global
