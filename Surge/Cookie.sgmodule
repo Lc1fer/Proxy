@@ -26,5 +26,7 @@ didi_token = type=http-request,pattern=^https:\/\/as\.xiaojukeji\.com\/ep\/as\/t
 # > Xiaomi - account.huami.com
 xiaomi_token = type=http-response,pattern=^https:\/\/account\.huami\.com\/v2\/client\/login,requires-body=1,max-size=0, script-path=https://raw.githubusercontent.com/Luc1ferrr/Luc1fer/master/Script/Xiaomi-sports.js
 
+华住会获取签到Cookie = type=http-request,    pattern=https:\/\/newactivity\.huazhu\.com\/v1\/pointStore\/signIn,requires-body=1,max-size=0, script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/hzh/hzh.js
+
 [MITM]
-hostname = %APPEND% api.m.jd.com, daojia.jd.com, ifac*.iqiyi.com, www.52pojie.cn, *.rr.tv, m.ctrip.com, as.xiaojukeji.com, account.huami.com
+hostname = %APPEND% api.m.jd.com, daojia.jd.com, ifac*.iqiyi.com, www.52pojie.cn, *.rr.tv, m.ctrip.com, as.xiaojukeji.com, account.huami.com, newactivity.huazhu.com
