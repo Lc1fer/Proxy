@@ -37,7 +37,7 @@
 
 滴滴喝水 = type=cron,cronexp="30 8,20,9-19/2 * * *",wake-system=1,timeout=300,script-path=Script/DiDi_drink.js
 
-滴滴睡觉 = type=cron,cronexp="1 6,22 * * *",wake-system=1,timeout=300,script-path=Script/DiDi_sleep.js
+滴滴睡觉 = type=cron,cronexp="10 0 6,22 * * *",wake-system=1,timeout=300,script-path=Script/DiDi_sleep.js
 
 小米运动 = type=cron,cronexp="25 15 * * *",wake-system=1,timeout=300,script-path=Script/xmSports.js
 
