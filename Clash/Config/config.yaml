@@ -5,8 +5,6 @@ mode: rule
 log-level: info
 ipv6: false
 external-controller: 127.0.0.1:9090
-experimental:
-  ignore-resolve-fail: true
 hosts:
   mtalk.google.com: 108.177.125.188
   dl.google.com: 180.163.151.161
