@@ -11,24 +11,28 @@ hosts:
   dl.l.google.com: 180.163.151.161
 dns:
   enable: true
-  ipv6: false
   listen: 0.0.0.0:53
+  ipv6: false
   default-nameserver:
     - 119.29.29.29
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
-  nameserver:
-    - 119.29.29.29
   fake-ip-filter:
     - "*.lan"
-    - "*.edu.cn"
     - localhost.ptlogin2.qq.com
+    - "*.edu.cn"
     - "*.*.*.srv.nintendo.net"
     - "*.*.stun.playstation.net"
     - xbox.*.*.microsoft.com
     - "*.*.xboxlive.com"
     - "*.msftncsi.com"
     - www.msftconnecttest.com
+  nameserver:
+    - 119.29.29.29
+  fallback-filter:
+    geoip: true
+    ipcidr:
+      # - 240.0.0.0/4
 rule-providers:
   Direct_list:
     type: http
