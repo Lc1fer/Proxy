@@ -1,0 +1,26 @@
+mixed-port: 7890
+allow-lan: false
+bind-address: "*"
+mode: rule
+log-level: info
+ipv6: false
+external-controller: 127.0.0.1:49794
+experimental:
+  ignore-resolve-fail: true
+hosts:
+  mtalk.google.com: 108.177.125.188
+dns:
+  enable: true
+  ipv6: false
+  listen: 0.0.0.0:53
+  enhanced-mode: redir-host
+  nameserver:
+    - 119.29.29.29
+    - https://dh-dns.global-idc.net/dns-query
+tun:
+  enable: true
+  stack: gvisor
+  dns-hijack:
+    - 198.18.0.2:53
+  auto-route: true
+  auto-detect-interface: true
