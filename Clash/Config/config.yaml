@@ -12,7 +12,7 @@ hosts:
 dns:
   enable: true
   ipv6: false
-  listen: '0.0.0.0:5450'
+  listen: 0.0.0.0:53
   enhanced-mode: fake-ip
   default-nameserver:
     - 119.29.29.29
