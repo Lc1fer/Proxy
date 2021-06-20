@@ -4,3 +4,4 @@ payload:
   - DOMAIN-SUFFIX,hrtsea.com,DIRECT
   - DOMAIN-SUFFIX,huya.com,DIRECT
   - DOMAIN-SUFFIX,lanzou.com,DIRECT
+  - PROCESS-NAME,1Password.exe,DIRECT
