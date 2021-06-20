@@ -16,7 +16,6 @@ dns:
   enhanced-mode: redir-host
   nameserver:
     - 119.29.29.29
-    - https://dh-dns.global-idc.net/dns-query
 tun:
   enable: true
   stack: gvisor
