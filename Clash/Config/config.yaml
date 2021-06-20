@@ -9,17 +9,6 @@ experimental:
   ignore-resolve-fail: true
 hosts:
   mtalk.google.com: 108.177.125.188
-mixed-port: 7890
-allow-lan: false
-bind-address: "*"
-mode: rule
-log-level: info
-ipv6: false
-external-controller: 127.0.0.1:9090
-experimental:
-  ignore-resolve-fail: true
-hosts:
-  mtalk.google.com: 108.177.125.188
 dns:
   enable: true
   ipv6: false
