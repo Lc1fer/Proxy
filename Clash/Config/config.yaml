@@ -29,6 +29,18 @@ dns:
   nameserver:
     - 'https://doh.pub/dns-query'
 rule-providers:
+  Direct_list:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Direct_list.yaml
+    url: https://cdn.jsdelivr.net/gh/Lc1fer/Proxy@master/Clash/RuleSet/Direct_list.yaml
+    interval: 86400
+  Download:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Download.yaml
+    url: https://cdn.jsdelivr.net/gh/Lc1fer/Proxy@master/Clash/RuleSet/Download.yaml
+    interval: 86400
   Unbreak:
     type: http
     behavior: classical
@@ -66,6 +78,8 @@ rule-providers:
     url: https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Clash/RuleSet/Extra/ChinaIP.yaml
     interval: 86400
 rules:
+  - RULE-SET,Direct_list,DIRECT
+  - RULE-SET,Download,DIRECT
   - RULE-SET,Unbreak,DIRECT
   - RULE-SET,Spotify,Spotify
   - RULE-SET,Streaming,Video
