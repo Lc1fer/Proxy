@@ -15,17 +15,11 @@
 
 京东领现金 = type=cron,cronexp="9 0 * * *",wake-system=1,timeout=300,script-path=Script/jd_cash.js
 
-新潮品牌狂欢 = type=cron,cronexp="4 10 * * *",wake-system=1,timeout=3600,script-path=Script/jd_mcxhd.js
-
 京东额外奖励 = type=cron,cronexp="10 7 * * *",wake-system=1,timeout=300,script-path=Script/jd_bean_home.js
-
-明星小店 = type=cron,cronexp="0 1,21 * * *",wake-system=1,timeout=3600,script-path=Script/jd_star_shop.js
 
 金榜创造营 = type=cron,cronexp="13 1,22 * * *",wake-system=1,timeout=3600,script-path=Script/jd_gold_creator.js
 
 京东种豆得豆 = type=cron,cronexp="1 7-21/2 * * *",wake-system=1,timeout=300,script-path=Script/jd_plantBean.js
-
-京东手机狂欢城 = type=cron,cronexp=0 0-18/6 * * *,wake-system=1,timeout=3600,script-path=Script/jd_carnivalcity.js
 
 取关京东店铺商品 = type=cron,cronexp="55 23 * * *",wake-system=1,timeout=3600,script-path=Script/jd_unsubscribe.js
 
@@ -40,5 +34,3 @@
 滴滴睡觉 = type=cron,cronexp="10 0 6,22 * * *",wake-system=1,timeout=300,script-path=Script/DiDi_sleep.js
 
 小米运动 = type=cron,cronexp="25 15 * * *",wake-system=1,timeout=300,script-path=Script/xmSports.js
-
-# 切换会话 = type=cron,cronexp="10 0 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/box/switcher/box.switcher.js
