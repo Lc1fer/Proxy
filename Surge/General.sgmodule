@@ -112,5 +112,7 @@ URL-REGEX,^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start,REJECT-TI
 ^https?:\/\/y\.gtimg\.cn\/music\/common\/upload\/t_splash_info\/ - reject
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/music\/common\/upload\/t_splash_info\/ - reject
 
+^https:\/\/shopmember\.m\.jd\.com\/shopcard\/\?(venderId=[0-9]+).* https:\/\/shopmember\.m\.jd\.com\/member\/memberCloseAccount\?$1 302
+
 [MITM]
-hostname = %APPEND% www.google.cn, gw.alicdn.com, heic.alicdn.com, acs.m.taobao.com, issuecdn.baidupcs.com, api.douban.com, ms.jr.jd.com, img*.360buyimg.com, ccsp-egmas.sf-express.com
+hostname = %APPEND% www.google.cn, gw.alicdn.com, heic.alicdn.com, acs.m.taobao.com, issuecdn.baidupcs.com, api.douban.com, ms.jr.jd.com, img*.360buyimg.com, ccsp-egmas.sf-express.com, shopmember.m.jd.com
