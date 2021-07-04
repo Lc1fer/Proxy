@@ -2,10 +2,6 @@
 #!desc=URL optimization and removes ads
 #!system=ios
 
-[Rule]
-# > Jingdong
-URL-REGEX,^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start,REJECT-TINYGIF
-
 [URL Rewrite]
 # Redirect Google Search Service
 ^https?:\/\/(www.)?(g|google)\.cn https://www.google.com 302
@@ -72,47 +68,5 @@ URL-REGEX,^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start,REJECT-TI
 
 #^https:\/\/shopmember\.m\.jd\.com\/shopcard\/\?(venderId=[0-9]+).* https:\/\/shopmember\.m\.jd\.com\/member\/memberCloseAccount\?$1 302
 
-# A
-# --- (Alibaba) ---
-# > Taobao - gw.alicdn.com,heic.alicdn.com
-^https?:\/\/(gw|heic)\.alicdn\.com\/\w{2}s\/[\w\/.-]+\.jpg_(9\d{2}|\d{4}) - reject
-# ^https?:\/\/(gw|heic)\.alicdn\.com\/imgextra\/[\w\/]+!!\d+\.jpg_9\d{2} - reject
-# > Fliggy - acs.m.taobao.com
-^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.trip\.activity\.querytmsresources\/ - reject
-# > Taopiaopiao - acs.m.taobao.com
-^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopadvertiseapi\.queryadvertise\/ - reject
-
-# B
-# ---(Baidu)---
-# > Baidu NetDisk - issuecdn.baidupcs.com
-^https?:\/\/pan\.baidu\.com\/rest\/\d\.\d\/pcs\/adx - reject
-^https?:\/\/pan\.baidu\.com\/act\/api\/activityentry - reject
-^https?:\/\/issuecdn\.baidupcs\.com\/issue\/netdisk\/guanggao - reject
-
-# D
-# > douban - api.douban.com
-^https?:\/\/api\.douban\.com\/v\d\/app_ads\/ - reject
-# > DouYuZhiBo - rtbapi.douyucdn.cn
-^https?:\/\/rtbapi\.douyucdn\.cn\/japi\/sign\/app\/getinfo\?uid=&mdid=iphone&client_sys=ios$ - reject
-
-# J
-# > JD - api.m.jd.com, ms.jr.jd.com, img*.360buyimg.com
-^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=queryMaterialAdverts - reject
-^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\/ - reject
-^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/aladdin\/na\/m\/getLoadingPicture - reject
-^https?:\/\/img\d+\.360buyimg\.com\/jddjadvertise\/ - reject
-
-# S
-# > SF Express - ccsp-egmas.sf-express.com
-^https?:\/\/ccsp-egmas\.sf-express\.com\/cx-app-base\/base\/app\/ad\/ - reject
-# > SF HiveConsumer - consumer.fcbox.com
-^https?:\/\/consumer\.fcbox\.com\/v\d\/ad\/ - reject
-
-# T
-# ---(Tencent)---
-# > Tencent Music
-^https?:\/\/y\.gtimg\.cn\/music\/common\/upload\/t_splash_info\/ - reject
-^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/music\/common\/upload\/t_splash_info\/ - reject
-
 [MITM]
-hostname = %APPEND% www.google.cn, gw.alicdn.com, heic.alicdn.com, acs.m.taobao.com, issuecdn.baidupcs.com, api.douban.com, ms.jr.jd.com, img*.360buyimg.com, ccsp-egmas.sf-express.com
+hostname = %APPEND% www.google.cn
