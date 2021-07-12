@@ -15,3 +15,4 @@ payload:
   - PROCESS-NAME,uTorrent.exe
   - PROCESS-NAME,BitComet_x64.exe
   - PROCESS-NAME,qbittorrent.exe
+  - PROCESS-NAME,aDrive.exe
